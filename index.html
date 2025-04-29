@@ -117,131 +117,144 @@
 		</section>
 
 		<!-- SAE -->
-		<section class="page-section" id="sae">
-			<div class="container px-4 px-lg-5">
-				<h2 class="text-center mt-0">Projets SAE</h2>
-				<hr class="divider" />
-				
-            <!-- SAE 1 -->
-            <div class="mb-5">
-                    <h3 class="text-primary">SAE 5.01 - Mise en place d'une solution d'hypervision avec Proxmox VE, 3ème année</h3>
+				<section class="page-section" id="sae">
+					<div class="container px-4 px-lg-5">
+							<h2 class="text-center mt-0">Projets SAE</h2>
+							<hr class="divider" />
 
-                    <h5 class="text-muted">Contexte</h5>
-                    <p>Dans le cadre de notre formation en Réseaux et Télécommunications, nous avons conçu et déployé une infrastructure d’hypervision dédiée aux travaux pratiques étudiants. L'objectif était de fournir un environnement virtualisé sécurisé, simple d'accès et optimisé pour la pédagogie.</p>
+							<!-- Onglets année -->
+							<ul class="nav nav-tabs justify-content-center mb-4" id="saeTabs" role="tablist">
+									<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="annee3-tab" data-bs-toggle="tab" data-bs-target="#annee3" type="button" role="tab" aria-controls="annee3" aria-selected="true">3ᵉ année</button>
+									</li>
+									<li class="nav-item" role="presentation">
+											<button class="nav-link" id="annee2-tab" data-bs-toggle="tab" data-bs-target="#annee2" type="button" role="tab" aria-controls="annee2" aria-selected="false">2ᵉ année</button>
+									</li>
+							</ul>
 
-                    <h5 class="text-muted">Réalisation technique</h5>
-                    <ul>
-                            <li><strong>Choix de la solution :</strong> Après étude comparative, nous avons opté pour Proxmox VE pour sa fiabilité, sa gestion avancée des ressources et son interface intuitive.</li>
-                            <li><strong>Installation de l’hyperviseur :</strong> Déploiement de Proxmox VE sur un serveur physique (8 cœurs, 16 Go RAM, SSD 240 Go + HDD 1 To).</li>
-                            <li><strong>Création d'un environnement clé en main :</strong> Templates VM préconfigurés intégrant Packettracer, DHCP, nftables, Nmap, VirtualBox.</li>
-                            <li><strong>Accès distant sécurisé :</strong> Mise en place d'un VPN WireGuard</li>
-                            <li><strong>Développement d'une interface web personnalisée :</strong> Application Flask permettant la gestion simplifiée des VM (démarrage, arrêt, clonage) avec authentification.</li>
-                    </ul>
+			<!-- Contenu des onglets -->
+			<div class="tab-content" id="saeTabsContent">
 
-                    <h5 class="text-muted">Compétences mobilisées</h5>
-                    <ul>
-                            <li>Administration système et virtualisation (Proxmox VE, gestion de ressources et templates VM)</li>
-                            <li>Sécurisation réseau (WireGuard VPN)</li>
-                            <li>Développement web</li>
-                            <li>Travail en équipe et gestion de projet agile</li>
-                    </ul>
+					<!-- 3ᵉ année -->
+					<div class="tab-pane fade show active" id="annee3" role="tabpanel" aria-labelledby="annee3-tab">
+							
+							<!-- SAE 5.01 -->
+							<div class="mb-5">
+									<h3 class="text-primary">SAE 5.01 - Mise en place d'une solution d'hypervision avec Proxmox VE</h3>
 
-                    <h5 class="text-muted">Bilan personnel</h5>
-                    <p>Ce projet a renforcé nos compétences en administration de systèmes virtualisés, en sécurité des accès réseau et en développement d’interfaces de gestion. La conception d’une infrastructure complète, combinant virtualisation et sécurité, nous a offert une approche concrète des problématiques rencontrées en entreprise.</p>
-                </div>
+									<h5 class="text-muted">Contexte</h5>
+									<p>Dans le cadre de notre formation en Réseaux et Télécommunications, nous avons conçu et déployé une infrastructure d’hypervision dédiée aux travaux pratiques étudiants. L'objectif était de fournir un environnement virtualisé sécurisé, simple d'accès et optimisé pour la pédagogie.</p>
 
-				<!-- SAE 2 -->
-                <div class="mb-5">
-                    <h3 class="text-primary">SAE 5 ROM.03 - Déploiement et gestion de services ROM (Asterisk & WebRTC), 3ème année</h3>
+									<h5 class="text-muted">Réalisation technique</h5>
+									<ul>
+											<li><strong>Choix de la solution :</strong> Utilisation de Proxmox VE pour sa gestion avancée et sa compatibilité étendue.</li>
+											<li><strong>Installation de l’hyperviseur :</strong> Déploiement sur serveur physique (8 cœurs, 16 Go RAM, SSD 240 Go + HDD 1 To).</li>
+											<li><strong>Création d'un environnement clé en main :</strong> Templates VM avec PacketTracer, DHCP, nftables, Nmap, VirtualBox.</li>
+											<li><strong>Accès distant sécurisé :</strong> VPN WireGuard pour un accès sécurisé aux ressources.</li>
+											<li><strong>Développement web :</strong> Application Flask pour la gestion des VM via interface simple et authentifiée.</li>
+									</ul>
 
-                    <h5 class="text-muted">Contexte</h5>
-                    <p>Dans le cadre d'une approche professionnelle des systèmes de communication unifiée, nous avons conçu et déployé une solution complète reposant sur Asterisk. L’objectif était de permettre des échanges voix, vidéo et messagerie via une interface web personnalisée, tout en assurant la sécurité des communications.</p>
+									<h5 class="text-muted">Compétences mobilisées</h5>
+									<ul>
+											<li>Administration système et virtualisation</li>
+											<li>Sécurisation réseau (VPN)</li>
+											<li>Développement web (Flask)</li>
+											<li>Gestion de projet agile</li>
+									</ul>
 
-                    <h5 class="text-muted">Réalisation technique</h5>
-                    <ul>
-                            <li><strong>Installation d’Asterisk :</strong> Déploiement sur une machine virtuelle Alpine Linux, avec configuration réseau via VLAN dédié.</li>
-                            <li><strong>Configuration des téléphones IP :</strong> Enregistrement et paramétrage de postes FANVIL et CISCO, création de plans de numérotation et boîtes vocales.</li>
-                            <li><strong>Développement d'une administration web :</strong> Interface légère connectée au serveur HTTP natif d’Asterisk pour la gestion des logs et configurations, sans passer par des solutions toutes faites comme AsteriskNOW.</li>
-                            <li><strong>Extension multimédia :</strong> Intégration de la vidéo et de la messagerie instantanée via WebRTC et sip.js, hébergement du portail sur un serveur NGINX.</li>
-                            <li><strong>Audit de sécurité et sécurisation :</strong> Analyse des vulnérabilités (Man-in-the-Middle) puis déploiement du protocole TLS pour chiffrer les échanges SIP et RTP.</li>
-                    </ul>
+									<h5 class="text-muted">Bilan personnel</h5>
+									<p>Projet très enrichissant ayant renforcé nos compétences techniques tout en nous familiarisant avec des problématiques concrètes de déploiement d'infrastructure.</p>
+							</div>
 
-                    <h5 class="text-muted">Compétences mobilisées</h5>
-                    <ul>
-                            <li>Administration réseau : VLANs, configuration SIP, déploiement de téléphones IP.</li>
-                            <li>Développement web : Interfaces utilisateurs, WebRTC, intégration SIP.js sur serveur Linux.</li>
-                            <li>Sécurité informatique : Analyse de flux réseau, mise en place de communications chiffrées (TLS).</li>
-                            <li>Gestion de projet : Travail en équipe, documentation technique, respect des délais.</li>
-                    </ul>
+							<!-- SAE 5 ROM.03 -->
+							<div class="mb-5">
+									<h3 class="text-primary">SAE 5 ROM.03 - Déploiement et gestion de services ROM (Asterisk & WebRTC)</h3>
 
-                    <h5 class="text-muted">Bilan personnel</h5>
-                    <p>Ce projet a enrichi ma compréhension des infrastructures de communication modernes, tout en renforçant ma capacité à résoudre les défis techniques liés à la compatibilité des équipements et à la sécurisation des flux multimédias. J'ai également progressé dans la gestion structurée de projets collaboratifs en environnement technique exigeant.</p>
-                </div>
+									<h5 class="text-muted">Contexte</h5>
+									<p>Nous avons déployé une solution de communication unifiée basée sur Asterisk, combinant voix, vidéo et messagerie instantanée via une interface web dédiée.</p>
 
-                <!-- SAE 4 -->
-                <div class="mb-5">
-                    <h3 class="text-primary">SAE 5 CYBER.03 - Supervision d'équipements et services avec Elastic Stack</h3>
+									<h5 class="text-muted">Réalisation technique</h5>
+									<ul>
+											<li><strong>Déploiement d'Asterisk :</strong> Installation sur Alpine Linux</li>
+											<li><strong>Téléphones IP :</strong> Configuration des postes FANVIL et CISCO.</li>
+											<li><strong>Développement web :</strong> Interface personnalisée de gestion d'Asterisk en HTTP natif.</li>
+											<li><strong>Extension multimédia :</strong> Intégration WebRTC et messagerie via sip.js hébergée sur NGINX.</li>
+											<li><strong>Audit et sécurisation :</strong> TLS pour protéger les échanges SIP/RTP après analyse de vulnérabilités.</li>
+									</ul>
 
-                    <h5 class="text-muted">Contexte</h5>
-                    <p>Dans le but de renforcer la surveillance réseau et système, nous avons déployé une solution de supervision centralisée basée sur l'Elastic Stack. Le projet visait à collecter, analyser et visualiser les logs provenant d’équipements Cisco ainsi que de services critiques tels qu’Apache2, PostgreSQL et des serveurs Ubuntu.</p>
+									<h5 class="text-muted">Compétences mobilisées</h5>
+									<ul>
+											<li>Configuration réseau avancée (SIP, VLAN)</li>
+											<li>Développement web (Node.js, WebRTC)</li>
+											<li>Cybersécurité appliquée aux communications</li>
+											<li>Gestion de projet agile</li>
+									</ul>
 
-                    <h5 class="text-muted">Réalisation technique</h5>
-                    <ul>
-                            <li><strong>Déploiement de l'Elastic Stack :</strong> Installation et configuration d’Elasticsearch, Logstash, Kibana et Filebeat sur une infrastructure Ubuntu.</li>
-                            <li><strong>Supervision d'un switch Cisco :</strong> Activation du module Filebeat Cisco, configuration du logging réseau sur le switch, collecte et traitement des logs de supervision.</li>
-                            <li><strong>Supervision d'Apache2 :</strong> Activation du module Apache dans Filebeat, récupération des journaux d’accès et détection des erreurs HTTP ou tentatives d’intrusion.</li>
-                            <li><strong>Supervision de PostgreSQL :</strong> Intégration via Kibana, analyse des logs SQL (erreurs, activités anormales, tentatives de brute-force).</li>
-                            <li><strong>Supervision d'une machine Ubuntu :</strong> Surveillance des événements système (Syslog), détection de modifications critiques (création d’utilisateurs, connexions SSH échouées).</li>
-                            <li><strong>Analyse des attaques :</strong> Interprétation des logs réseau pour repérer les Shellshock attacks, attaques par bruteforce, scan de vulnérabilités sur WordPress, exfiltration de fichiers système sensibles via rundll32.</li>
-                    </ul>
+									<h5 class="text-muted">Bilan personnel</h5>
+									<p>Ce projet m'a permis de maîtriser l'intégration de solutions de téléphonie IP sécurisées et d'approfondir mon expertise réseau.</p>
+							</div>
 
-                    <h5 class="text-muted">Compétences mobilisées</h5>
-                    <ul>
-                            <li>Déploiement et administration de l’Elastic Stack (ELK).</li>
-                            <li>Configuration avancée de la supervision d'équipements réseau (Cisco) et de services (Apache, PostgreSQL, Ubuntu).</li>
-                            <li>Analyse de logs pour détecter des failles de sécurité et activités malveillantes.</li>
-                            <li>Automatisation de la collecte et visualisation d’événements système.</li>
-                    </ul>
+							<!-- SAE 5 CYBER.03 -->
+							<div class="mb-5">
+									<h3 class="text-primary">SAE 5 CYBER.03 - Supervision d'équipements et services avec Elastic Stack</h3>
 
-                    <h5 class="text-muted">Bilan personnel</h5>
-                    <p>Cette SAE m'a permis de consolider mes compétences en supervision réseau et sécurité des infrastructures. La détection d’attaques réelles et l’analyse approfondie des logs m'ont offert une expérience pratique précieuse, proche des exigences des environnements de cybersécurité professionnels.</p>
-                </div>
+									<h5 class="text-muted">Contexte</h5>
+									<p>Déploiement d'une solution de supervision et d'analyse de logs multi-sources en utilisant Elastic Stack (ELK) pour sécuriser l'infrastructure réseau et serveur.</p>
 
+									<h5 class="text-muted">Réalisation technique</h5>
+									<ul>
+											<li><strong>Déploiement de l'Elastic Stack :</strong> Elasticsearch, Kibana, Logstash, Filebeat installés sur Ubuntu.</li>
+											<li><strong>Supervision Cisco :</strong> Collecte des logs d'un switch via Filebeat module Cisco.</li>
+											<li><strong>Supervision services :</strong> Apache2, PostgreSQL, et Ubuntu système.</li>
+											<li><strong>Détection d'incidents :</strong> Identification d'attaques Shellshock, bruteforce WordPress, exfiltration via rundll32.</li>
+									</ul>
 
+									<h5 class="text-muted">Compétences mobilisées</h5>
+									<ul>
+											<li>Supervision réseau/système avec ELK</li>
+											<li>Analyse de logs et détection de failles</li>
+											<li>Automatisation de la collecte d'événements</li>
+									</ul>
 
-				<!-- SAE 3 -->
-                <div class="mb-5">
-                    <h3 class="text-primary">SAE 3.03 - Projet Pépinière Multi-sites, 2ème année</h3>
+									<h5 class="text-muted">Bilan personnel</h5>
+									<p>Projet très concret qui m'a permis d'acquérir des compétences opérationnelles en cybersécurité et en supervision de systèmes critiques.</p>
+							</div>
+					</div>
 
-                    <h5 class="text-muted">Contexte</h5>
-                    <p>L'objectif était de déployer une architecture sécurisée, résiliente et capable de répondre aux besoins d'un réseau d'entreprise, tout en assurant l'interconnexion efficace entre le siège de l'entreprise et et ses succursales.</p>
+					<!-- 2ᵉ année -->
+					<div class="tab-pane fade" id="annee2" role="tabpanel" aria-labelledby="annee2-tab">
+							
+							<!-- SAE 3.03 -->
+							<div class="mb-5">
+									<h3 class="text-primary">SAE 3.03 - Projet Pépinière Multi-sites</h3>
 
-                    <h5 class="text-muted">Réalisation technique</h5>
-                    <ul>
-                            <li><strong>Conception de l'infrastructure réseau :</strong> Planification des VLANs (ADMIN, PERSONNEL, PRODUCTION, VIDÉO, WIFI personnel et invité) et de la hiérarchie des réseaux pour garantir sécurité et performances.</li>
-                            <li><strong>Déploiement des services au siège :</strong> Installation de Windows Server avec Active Directory, DNS principal, serveur de messagerie interne, proxy web, base de données de production, serveur Web public en lecture seule.</li>
-                            <li><strong>Sécurisation de l'accès aux équipements :</strong> Accès SSH et interfaces web uniquement via le réseau ADMIN et depuis un poste d'administration dédié.</li>
-                            <li><strong>Configuration des succursales :</strong> Réplication DNS, tunneling VPN vers le siège pour sécuriser tout le trafic sortant et filtrage via proxy centralisé.</li>
-                            <li><strong>Infrastructure physique et virtuelle :</strong> Simulation sous Packet Tracer et GNS3, déploiement de machines virtuelles pour les serveurs, câblage et mise en production réelle durant deux journées intensives.</li>
-                            <li><strong>Redondance et haute disponibilité :</strong> Mise en place de redondances matérielles au siège pour augmenter la tolérance aux pannes.</li>
-                    </ul>
+									<h5 class="text-muted">Contexte</h5>
+									<p>Déploiement d'une infrastructure réseau multi-sites pour connecter un siège social d'entreprise et ses succursales</p>
 
-                    <h5 class="text-muted">Compétences mobilisées</h5>
-                    <ul>
-                            <li>Conception et déploiement d'architectures réseau multi-sites.</li>
-                            <li>Administration système (Active Directory, DNS, BDD, Proxy).</li>
-                            <li>Virtualisation et simulation réseau (Packet Tracer, GNS3).</li>
-                            <li>Configuration avancée de services réseau et sécurisation des échanges.</li>
-                            <li>Gestion de projet, travail en équipe, encadrement d'étudiants (étudiants en première année).</li>
-                    </ul>
+									<h5 class="text-muted">Réalisation technique</h5>
+									<ul>
+											<li><strong>Planification de l'architecture :</strong> VLAN ADMIN, PERSONNEL, PRODUCTION, VIDÉO, WIFI.</li>
+											<li><strong>Déploiement des services au siège :</strong> Active Directory, DNS principal, messagerie interne, base de données sécurisée, serveur Web public.</li>
+											<li><strong>Connexion succursales :</strong> VPN centralisé et réplication DNS entre sites.</li>
+											<li><strong>Simulation et tests :</strong> Packet Tracer et GNS3 pour valider les configurations avant production.</li>
+											<li><strong>Redondance matérielle :</strong> Augmentation de la tolérance aux pannes au niveau du siège.</li>
+									</ul>
 
-                    <h5 class="text-muted">Bilan personnel</h5>
-                    <p>Ce projet m'a permis d'aborder toutes les dimensions d'un déploiement réseau : de la planification théorique à la mise en production réelle. J'ai renforcé mes compétences en administration réseau, en sécurisation des infrastructures, mais également en gestion d'équipe et en communication technique lors de la soutenance orale.</p>
-                </div>
+									<h5 class="text-muted">Compétences mobilisées</h5>
+									<ul>
+											<li>Conception d'infrastructures réseau sécurisées</li>
+											<li>Administration système Windows Server</li>
+											<li>Virtualisation et simulation GNS3</li>
+											<li>Gestion de projet et coordination d'équipe</li>
+									</ul>
 
-
+									<h5 class="text-muted">Bilan personnel</h5>
+									<p>Cette SAE m'a permis de développer une approche méthodique du déploiement réseau, de la sécurisation des services et de la gestion de projet en environnement réel.</p>
+							</div>
+					</div>
 			</div>
-		</section>
+	</div>
+</section>
 
 		<!-- Mentions légales -->
 		<section class="page-section bg-primary text-white" id="mentions">
